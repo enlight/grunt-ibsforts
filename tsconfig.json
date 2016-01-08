@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": true,
+        "removeComments": false,
+        "noLib": true,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": false
+    },
+    "files": [
+        "node_modules/typescript/lib/lib.es6.d.ts",
+        "typings/gruntjs/gruntjs.d.ts",
+        "tasks/ibsforts.ts"
+    ]
+}

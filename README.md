@@ -76,5 +76,10 @@ TODO
 
 TODO
 
+## Development
+
+- `npm install` to install all dependencies.
+- `npm run build` to compile the TypeScript source files to JavaScript.
+
 ## License
 MIT

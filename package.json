@@ -1,0 +1,41 @@
+{
+  "name": "grunt-ibsforts",
+  "description": "Grunt plugin that executes the Incremental Build Server for TypeScript.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/enlight/grunt-ibsforts",
+  "author": {
+    "name": "Vadim Macagon",
+    "email": "vadim.macagon@gmail.com",
+    "url": "vadim.macagon.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enlight/grunt-ibsforts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/enlight/grunt-ibsforts/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "scripts": {
+    "build": "node ./node_modules/typescript/lib/tsc.js",
+    "test": ""
+  },
+  "devDependencies": {
+    "typescript": "^1.7.5"
+  },
+  "peerDependencies": {
+  },
+  "keywords": [
+    "gruntplugin",
+    "typescript",
+    "ibsforts",
+    "build",
+    "server"
+  ],
+  "dependencies": {
+    "ibsforts": "github:enlight/ibsforts"
+  }
+}
