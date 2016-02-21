@@ -96,7 +96,7 @@ function activatePlugin(grunt: IGrunt) {
       projects.map(projectOptions =>
         ProjectLoader.loadFromConfigFile(projectOptions.projectConfigPath)
         .then(project => {
-          project.postCompileTransforms = loadPostCompileTransforms(projectOptions.plugins);
+          project.postCompileTransforms = loadPostCompileTransforms(projectOptions.plugins || []);
           return server.watchProject(project);
         })
         .catch((err: Error) => {
@@ -110,7 +110,7 @@ function activatePlugin(grunt: IGrunt) {
         grunt.log.writeln(`Building ${projectOptions.projectConfigPath} ...`);
         return ProjectLoader.loadFromConfigFile(projectOptions.projectConfigPath)
         .then(project => {
-          project.postCompileTransforms = loadPostCompileTransforms(projectOptions.plugins);
+          project.postCompileTransforms = loadPostCompileTransforms(projectOptions.plugins || []);
           return server.build(project);
         })
         .catch((err: Error) => {
